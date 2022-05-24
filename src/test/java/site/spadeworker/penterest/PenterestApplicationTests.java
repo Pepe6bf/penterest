@@ -1,4 +1,4 @@
-package site.penterest.penterest;
+package site.spadeworker.penterest;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
