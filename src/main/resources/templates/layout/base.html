@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html th:fragment="basic-layout (content)" xmlns:th="http://
+  www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: head}">
+    <title>title</title>
+</head>
+
+<body>
+    <header th:replace="~{fragments/header :: header}">
+        <p>header 내용</p>
+    </header>
+
+    <div th:replace="${content}">
+        <p>메인 컨텐츠</p>
+    </div>
+
+    <footer th:replace="~{fragments/footer :: footer}">
+        <p>footer 내용</p>
+    </footer>
+
+</body>
+</html>
