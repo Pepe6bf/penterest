@@ -11,9 +11,13 @@
         <p>header 내용</p>
     </header>
 
+    <hr>
+
     <div th:replace="${content}">
         <p>메인 컨텐츠</p>
     </div>
+
+    <hr>
 
     <footer th:replace="~{fragments/footer :: footer}">
         <p>footer 내용</p>
