@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html th:replace="~{layout/base :: basic-layout(~{::section})}"
+<html th:replace="~{layout/base :: basic-layout(~{::content})}"
       xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <section th:fragment="header" style="height: 20rem; background-color: #38df81; border-radius: 1rem; margin: 2rem">
-        <h1>testing</h1>
-    </section>
-</body>
+    <th:block th:fragment="content">
+
+        <div th:fragment="header" style="height: 20rem; background-color: #38df81; border-radius: 1rem; margin: 2rem">
+            <h1>testing</h1>
+        </div>
+
+    </th:block>
 </html>
