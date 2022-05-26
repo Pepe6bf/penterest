@@ -39,3 +39,6 @@ out/
 # test 예제
 src/main/java/site/spadeworker/penterest/ex
 
+#Member 테스트 데이터 생성 클래스
+src/main/java/site/spadeworker/penterest/web/member/utils/MemberTestDataInit.java
+
