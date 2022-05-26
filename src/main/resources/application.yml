@@ -1,1 +1,4 @@
-
+spring:
+  servlet:
+    session:
+      tracking-modes: cookie
