@@ -54,4 +54,15 @@ public class LoginController {
         return "redirect:/";
     }
 
+    @PostMapping("/logout")
+    public String logout(HttpServletRequest request) {
+        // 옵션을 false로 하지 않으면 세션이 새로 생성됨
+        HttpSession session = request.getSession(false);
+
+        if (session != null) {
+            session.invalidate();
+        }
+
+        return "redirect:/";
+    }
 }
