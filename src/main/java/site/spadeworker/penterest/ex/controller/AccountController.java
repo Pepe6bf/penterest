@@ -1,4 +1,4 @@
-package site.spadeworker.penterest.account.controller;
+package site.spadeworker.penterest.ex.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
