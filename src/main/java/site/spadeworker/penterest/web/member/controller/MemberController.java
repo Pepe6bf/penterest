@@ -1,4 +1,4 @@
-package site.spadeworker.penterest.web.login.controller;
+package site.spadeworker.penterest.web.member.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
