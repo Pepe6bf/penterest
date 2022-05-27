@@ -62,3 +62,12 @@
 ### 2022.05.26
 - 회원가입/로그인 기능 구현
   - HttpServletRequest Session 적용
+
+### 2022.05.27
+- Commit Message 컨벤션 정의
+- Http 요청 로깅 기능 구현
+- 로그인한 회원만 특정 서비스에 접근할 수 있는 기능 구현
+  - Servlet Filter 활용
+  - Spring Interceptor로 리팩토링
+- 특정 세션을 파싱해주는 @Login 어노테이션 구현
+  - Argument Resolver 활용
