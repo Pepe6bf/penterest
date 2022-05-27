@@ -34,14 +34,4 @@ public class WebConfig implements WebMvcConfigurer {
     public void addArgumentResolvers(List<HandlerMethodArgumentResolver> resolvers) {
         resolvers.add(new LoginMemberArgumentResolver());
     }
-
-    //    @Bean
-//    public FilterRegistrationBean loginCheckFilter() {
-//        FilterRegistrationBean<Filter> filterRegistrationBean = new FilterRegistrationBean<>();
-//        filterRegistrationBean.setFilter(new LoginCheckFilter());
-//        filterRegistrationBean.setOrder(1);
-//        filterRegistrationBean.addUrlPatterns("/*");
-//
-//        return filterRegistrationBean;
-//    }
 }
