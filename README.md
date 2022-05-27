@@ -56,9 +56,9 @@
 - 프로젝트 최초 생성
 - Thymeleaf 레이아웃 테스트
 
-###2022.05.25
+### 2022.05.25
 - header/footer/head fragment 파일 제작 및 테스트
 
-###2022.05.26
+### 2022.05.26
 - 회원가입/로그인 기능 구현
   - HttpServletRequest Session 적용
