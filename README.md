@@ -22,13 +22,43 @@
 - Lombok
 - Thymeleaf & Bootstrap
 
+## Commit Convention
+
+---
+
+- build: 
+  - 시스템 또는 외부 종속성에 영향을 미치는 변경사항
+  - build.gradle 변경
+- chore:
+  - 패키지 매니저 설정할 경우, 코드 수정 없이 설정을 변경
+  - application.yml 설정 변경
+- docs:
+  - documentation 변경
+  - README.md 변경
+- feat:
+  - 새로운 기능 추가
+- fix:
+  - 버그 수정
+- perf:
+  - 성능 개선
+- refactor:
+  - 버그를 수정하거나 기능을 추가하지 않는 코드 변경, 리팩토링
+- style:
+  - 코드 의미에 영향을 주지 않는 변경사항 ( white space, formatting, colons )
+- test:
+  - 누락된 테스트 추가 또는 기존 테스트 수정
+
 ## History
 
 ---
 
-- 2022.05.24
-    - 프로젝트 최초 생성
-    - Thymeleaf 레이아웃 테스트
+###2022.05.24
+- 프로젝트 최초 생성
+- Thymeleaf 레이아웃 테스트
 
-- 2022.05.25
-    - header/footer/head fragment 파일 제작 및 테스트
+###2022.05.25
+- header/footer/head fragment 파일 제작 및 테스트
+
+###2022.05.26
+- 회원가입/로그인 기능 구현
+  - HttpServletRequest Session 적용
