@@ -1,4 +1,4 @@
-package site.spadeworker.penterest.config;
+package site.spadeworker.penterest.global.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

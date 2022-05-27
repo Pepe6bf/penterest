@@ -33,4 +33,9 @@ public class MemberController {
         memberService.save(member);
         return "redirect:/";
     }
+
+    @GetMapping("/memberPage")
+    public String memberPage() {
+        return "/members/memberPage";
+    }
 }

@@ -7,6 +7,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import site.spadeworker.penterest.domain.member.Member;
 import site.spadeworker.penterest.service.login.LoginService;
 import site.spadeworker.penterest.web.login.utils.SessionConst;
@@ -29,6 +30,7 @@ public class LoginController {
 
     @PostMapping("/login")
     public String login(@Valid @ModelAttribute LoginForm form,
+                        @RequestParam(defaultValue = "/") String redirectURL,
                         BindingResult bindingResult,
                         HttpServletRequest request) {
 
@@ -51,7 +53,7 @@ public class LoginController {
         // 세션에 로그인 회원 정보 보관
         session.setAttribute(SessionConst.LOGIN_MEMBER, loginMember);
 
-        return "redirect:/";
+        return "redirect:" + redirectURL;
     }
 
     @PostMapping("/logout")
