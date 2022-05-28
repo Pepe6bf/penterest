@@ -4,10 +4,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import site.spadeworker.penterest.domain.member.Member;
 import site.spadeworker.penterest.service.login.LoginService;
 import site.spadeworker.penterest.web.login.utils.SessionConst;
@@ -18,6 +15,7 @@ import javax.validation.Valid;
 
 @Slf4j
 @RequiredArgsConstructor
+@RequestMapping("/account")
 @Controller
 public class LoginController {
 

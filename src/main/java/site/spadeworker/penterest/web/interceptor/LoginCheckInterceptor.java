@@ -23,7 +23,7 @@ public class LoginCheckInterceptor implements HandlerInterceptor {
             log.info("미인증 사용자 요청");
 
             // 로그인 페이지로 redirect
-            response.sendRedirect("/login?redirectURL=" + requestURI);
+            response.sendRedirect("/account/login?redirectURL=" + requestURI);
 
             return false;
         }

@@ -13,18 +13,17 @@ import site.spadeworker.penterest.service.member.MemberService;
 import javax.validation.Valid;
 
 @RequiredArgsConstructor
-@RequestMapping("/members")
 @Controller
 public class MemberController {
 
     private final MemberService memberService;
 
-    @GetMapping("/add")
+    @GetMapping("/account/add")
     public String addForm(@ModelAttribute("member") Member member) {
         return "members/addmemberForm";
     }
 
-    @PostMapping("/add")
+    @PostMapping("/account/add")
     public String save(@Valid @ModelAttribute("member") Member member, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             return "members/addMemberForm";
