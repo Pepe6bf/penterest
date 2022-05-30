@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html th:fragment="basic-layout (content)" xmlns:th="http://
-  www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
 <head th:replace="~{fragments/head :: head}">
     <title>title</title>
@@ -13,9 +13,7 @@
 
     <hr>
 
-    <th:block th:replace="${content}">
-        <p>메인 컨텐츠</p>
-    </th:block>
+    <div layout:fragment="content"></div>
 
     <hr>
 
